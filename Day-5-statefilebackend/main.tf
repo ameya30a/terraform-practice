@@ -4,3 +4,7 @@ resource "aws_instance" "name" {
   key_name      = "my-linux"
   subnet_id     = "subnet-0129ac093f48da17a"  # 👈 Ye line add karo
 }
+
+resource "aws_vpc" "name" {
+  cidr_block = "10.0.0.0/16"
+}
