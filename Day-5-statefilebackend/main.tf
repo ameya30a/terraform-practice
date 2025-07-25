@@ -3,6 +3,9 @@ resource "aws_instance" "name" {
   instance_type = "t2.micro"
   key_name      = "my-linux"
   subnet_id     = "subnet-0129ac093f48da17a"  # 👈 Ye line add karo
+  tags = {
+    Name = "state"
+  }
 }
 
 resource "aws_vpc" "name" {
